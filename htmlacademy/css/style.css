@@ -23,4 +23,5 @@ blockquote {
   text-decoration: line-through;
   background-color: #FFF0F0;
   border: 1px solid #ccc;
+  border-left-width: 10px;
 }
