@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+
+}
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 15px;
+  line-height: 1.5;
+  background: #e0d6d6;
+  border-left: 4px solid #908888;
+}
+
+.pic {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #666;
+}
+
+.infa {
+  color: #2c4449;
+  text-decoration: line-through;
+  background-color: #FFF0F0;
+  border: 1px solid #ccc;
+}
