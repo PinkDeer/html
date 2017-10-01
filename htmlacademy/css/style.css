@@ -25,3 +25,40 @@ blockquote {
   border: 1px solid #ccc;
   border-left-width: 10px;
 }
+
+/*Таблицы*/
+
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  /*border-spacing: 5px; -отступ между ячейками таблицы (только без border-collapse: collapse;)*/
+  width: 25%;
+  height: 150px;
+}
+
+td {
+  border: 1px solid lightgray;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: left;
+}
+
+.cell-1 {
+  text-align: right;
+  background-color: lightgreen;
+  color: brown;
+  border-color: black;
+}
+
+.cell-2 {
+  vertical-align: bottom;
+}
