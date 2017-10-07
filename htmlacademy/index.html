@@ -189,73 +189,129 @@
       <a href="#head">Up</a>
     </p>
 
-    <h2>Таблица</h2>
+  <h2>Таблица</h2>
 
+  <table>
+    <caption>magna</caption>
+
+    <tr>
+      <th>velit</th>
+      <th>labore</th>
+      <th>eram</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td colspan="2" class="cell-1">2</td>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td rowspan="3" class="cell-2"onload="">2</td>
+      <td>3</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+
+  </table>
+
+
+  <h2>Формы</h2>
+
+  <h3>Форма входа</h3>
+
+  <form action="https://echo.htmlacademy.ru" method="post">
     <table>
-      <caption>magna</caption>
-
-      <tr>
-        <th>velit</th>
-        <th>labore</th>
-        <th>eram</th>
-      </tr>
-
-      <tr>
-        <td>1</td>
-        <td colspan="2" class="cell-1">2</td>
-      </tr>
-
-      <tr>
-        <td>1</td>
-        <td rowspan="3" class="cell-2"onload="">2</td>
-        <td>3</td>
-      </tr>
-
-      <tr>
-        <td>2</td>
-        <td>4</td>
-      </tr>
-
-      <tr>
-        <td>2</td>
-        <td>4</td>
-      </tr>
-
+        <tr>
+            <td>
+                <label for="login-field">Ваш логин</label>
+            </td>
+            <td>
+                <input id="login-field" type="text" name="login">
+            </td>
+        </tr>
+        <tr>
+            <td>Подпись</td>
+            <td>Другое поле</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Кнопка отправки</td>
+        </tr>
     </table>
 
+  <input type="submit" value="Отправить">
 
-    <h2>Форма входа</h2>
+  <br>
+  <h3>Многострочная форма</h3>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
-        <table>
-            <tr>
-                <td>
-                    <label for="login-field">Ваш логин</label>
-                </td>
-                <td>
-                    <input id="login-field" type="text" name="login">
-                </td>
-            </tr>
-            <tr>
-                <td>Подпись</td>
-                <td>Другое поле</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Кнопка отправки</td>
-            </tr>
-        </table>
+  <p>Введите ваш комментарий:</p>
 
-        <input type="submit" value="Отправить">
+   <textarea rows="10" cols="50" name="comment" id="comment-field">Текст комментария</textarea>
+    <br>
+   <input type="submit" value="Отправить">
 
-        ___
+   <h3>Чекбокс</h3>
+
+   <input type="checkbox" checked>
+
+   <p>Если галочка стоит, то браузер посылает переменную с именем поля на сервер, если галочки нет, то не посылается ничего. Таким образом, атрибут value не является обязательным. Чекбокс не подразумевает выбор одного элемента из нескольких. Поэтому если в одной форме есть несколько чекбоксов, то имена у них должны быть разными</p>
+
+  <h3>Радиобаттон</h3>
+
+  <input type="radio" value="1" name="var">
+  <input type="radio" value="2" name="var">
+  <input type="radio" value="2" name="var" checked>
+
+  <h3>Селект</h3>
+
+  <select name="theme">
+    <option value="light">Светлая тема</option>
+    <option value="dark">Тёмная тема</option>
+  </select>
+
+  <h3>Мультиселект</h3>
+
+  <select name="days" size="7" multiple>
+     <option>Понедельник</option>
+     <option>Вторник</option>
+     <option selected>Среда</option>
+     <option>Четверг</option>
+     <option>Пятница</option>
+     <option>Суббота</option>
+     <option>Воскресенье</option>
+  </select>
+
+  <h3>Загрузка файла</h3>
+
+  <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+    <p>Выберите изображение для своего аватара:</p>
+    <input type="file" name="avatar">
+
+    <input type="submit" value="Загрузить">
+  </form>
+
+  <h3>Скрытое поле</h3>
+
+  <input type="hidden" value="13">
 
 
-        <p>Введите ваш комментарий:</p>
+Теперь добавим ещё один вариант ответа в наш переключатель. Для этого нужно добавить ещё один <input> с таким же именем, но другим значением value.
 
- <textarea rows="10" name="comment" id="comment-field">Текст комментария</textarea>
+Подобным образом можно создавать группы переключателей с любым количеством вариантов.
 
- <input type="submit" value="Отправить">
+Чтобы сделать какой-либо вариант в переключателе выбранным по умолчанию, нужно добавить к соответствующему тегу <input> атрибут checked, как у поля-галочки.
+
+Кстати, имя поля у переключателей одной группы должно быть одинаковым, но идентификаторы всегда должны быть уникальными.
+
 
   </body>
 </html>
